@@ -138,3 +138,41 @@ Luego debemos instalar Docker y activar las opciones para usar WSL
 - Docker Scout: Es una herramienta para el monitoreo y gestión visual de los contenedores, permitiendo realizar acciones a través de una interfaz gráfica.
 
 - Learning Center: Centro para aprender más sobre Docker.
+
+* 5. ## Conociendo Docker CLI
+
+Ver la versión de Docker instalada
+```
+docker --version
+```
+
+Ver la documentación de docker
+```
+docker
+```
+
+Ver la documentación de un comando en particular con el flag --help
+```
+docker command-name --help
+```
+
+Nos muestra mucho de la información de hardware usado por docker
+```
+docker info
+```
+
+Listar imagenes
+```
+docker images
+```
+
+Para listar los contenedores actualmente en ejecución:
+```
+docker ps
+```
+Listar todos los contenedores docker (en ejecución y parados):
+```
+docker ps --all
+```
+
+<img src="./img/docker_cheatsheet.png">
