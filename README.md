@@ -176,3 +176,24 @@ docker ps --all
 ```
 
 <img src="./img/docker_cheatsheet.png">
+
+* 6. ## Mi primera imagen en docker
+
+El proceso para llegar de un docker file a un docker container es el siguiente:
+
+* El dockerfile contiene las instrucciones para crear la imagen docker
+* La imagen es un paquete ejecutable ligero e independiente de software que incluye todo lo necesario para ejecutar una aplicación: código, tiempo de ejecución, herramientas del sistema, bibliotecas del sistema y configuraciones. 
+
+<img src="./img/docker_process.png">
+
+```Dockerfile
+# Como nosotros necesitamos una imagen con un servidor web
+# vamos a traer un servicio de servidor web, en este caso nginx
+FROM nginx:latest
+# La palabra reservada FROM hara un pull de nginx
+
+# Ahora copiaremos los archivos html a el servidor web
+# nginx es una imagen basada en linux por lo que se usa la estructura de archivos de linux
+# Path: /usr/share/nginx/html --> Todos los archivos que html que coloquemos aqui se van a volver un sitio web
+COPY /linktree /usr/share/nginx/html
+```
