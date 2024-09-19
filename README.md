@@ -116,3 +116,11 @@ En el caso de los contenedores ninguna de estas capas es relevante.
 | **Casos de Uso** | Diversos SOs, seguridad alta | Desarrollo ágil, microservicios | Aplicaciones distribuidas, escalabilidad independiente |
 
 Cada tecnología tiene sus propias ventajas y es adecuada para diferentes escenarios y necesidades en la infraestructura y desarrollo de software.
+
+* 3. ## Instalación de Docker
+
+En Windows debemos instalar primero Windows Subsystem for Linux.
+Que es un sistema Linux funcional dentro de Windows.
+Debemos hacerlo para poder crear contenedores de Linux ya que es la mejor opción para crear Apps.
+
+Luego debemos instalar Docker y activar las opciones para usar WSL
