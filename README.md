@@ -124,3 +124,17 @@ Que es un sistema Linux funcional dentro de Windows.
 Debemos hacerlo para poder crear contenedores de Linux ya que es la mejor opción para crear Apps.
 
 Luego debemos instalar Docker y activar las opciones para usar WSL
+
+* 4. ## Conociendo Docker Desktop
+
+- Contenedores: Contiene todas las dependencias y librerías para que una aplicación se ejecute en cualquier máquina fuera de la cual en la que fue construida.
+
+- Images: Plantilla para la creación de contenedores.
+
+- Volumes: Ayudan a persistir los datos que son creado dentro de un contenedor, esto debido a que si no se usa los datos se pierden cuando el contenedor se destruye, ya que son efímeros.
+
+- Dev Environments: Son entornos de producción que ayudan a reducir los riesgos de versiones entre los equipos.
+
+- Docker Scout: Es una herramienta para el monitoreo y gestión visual de los contenedores, permitiendo realizar acciones a través de una interfaz gráfica.
+
+- Learning Center: Centro para aprender más sobre Docker.
