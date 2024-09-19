@@ -197,3 +197,11 @@ FROM nginx:latest
 # Path: /usr/share/nginx/html --> Todos los archivos que html que coloquemos aqui se van a volver un sitio web
 COPY /linktree /usr/share/nginx/html
 ```
+
+* 7. ## Creación de imágenes con Dockerfile
+
+````bash
+docker build website:latest .
+````
+
+* 8. ## 
