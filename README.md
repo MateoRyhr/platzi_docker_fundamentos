@@ -204,4 +204,24 @@ COPY /linktree /usr/share/nginx/html
 docker build website:latest .
 ````
 
-* 8. ## 
+* 8. ## De mi imagen a un contenedor usando CLI
+
+Para correr un contenedor desde la terminal usamos el siguiente comando:
+
+```bash
+docker run -it --rm -d -p 8080:80 --name web sitioweb
+```
+
+- -it: En forma interactiva para ver los logs 
+
+- --rm: elimina las versiones anteriores del contenedor
+
+- -d: el contenedor se ejecuta en un segundo plano
+
+- -p: mapea el puerto del contenedor con el puerto de la aplicación para exponerla
+
+- --name: nombre del contenedor
+
+- Finalmente agregar el nombre de la imagen
+
+Ahora si entramos a http://localhost:8080/linktree.html veremos el archivo que copiamos en el dockerfile
